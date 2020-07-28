@@ -1230,7 +1230,7 @@ div.jump {
 
 .name input[type=name] {
     left: 3px;
-    width: 25%;
+    width: 65%;
     
 }
 .go, .name input[type=name] {
@@ -1263,7 +1263,6 @@ a {
 .float-share {
     width: 100%;
     position: fixed;
-    margin-bottom:0;
     z-index: 80px;
     left: 0;
 }
