@@ -5,6 +5,10 @@
 
 
 
+
+
+
+
 /*---- start styling flowers ----*/
 
 #flower1 {
@@ -83,12 +87,7 @@ marquee .ltrmarquee {
 
 /*---- start stylng balon ----*/
 
-#balons {
-    position:fixed;
-    height:100%;
-    width:100%;
-    z-index:2;
-}
+
 #balons img[src="imags/balon-aid.png"] {
     height:60px;
     width:80px;
@@ -96,13 +95,12 @@ marquee .ltrmarquee {
 #balon12 img {
     height:20px;
     width:20px;
-    z-index:3;
     cursor:not-allowed;
 }
 
 #balon,#balon1,#balon2,#balon3,#balon4,#balon5,#balon6,#balon7,#balon8,#balon9,#balon10,#balon11,#balon12 {
-    position:absolute;
-    
+    position:fixed;
+    z-index:2;
 }
 #balon img,#balon1 img,#balon2 img,#balon3 img,#balon4 img,#balon5 img ,#balon6 img,#balon7 img,#balon8 img,#balon9 img,#balon10 img,#balon11 img {
     height:70px;
