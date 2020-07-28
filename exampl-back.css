@@ -1198,7 +1198,7 @@ div.jump {
 .float-share {
     width: 100%;
     position: fixed;
-    bottom: 0px;
+    bottom: 50px;
     z-index: 50;
 }
 
@@ -1230,9 +1230,11 @@ div.jump {
 
 .name input[type=name] {
     left: 3px;
-    width: 65%;
+    width: 25%;
+    
 }
 .go, .name input[type=name] {
+    
     color: #fff;
     border-radius: 10px;
     box-sizing: border-box;
@@ -1241,12 +1243,13 @@ div.jump {
     font-size: 1.3rem;
     height: 45px;
     text-transform: none;
+    
 }
 .go, .name input[type=name], .sticky {
     padding: 8px;
     position: fixed;
     text-align: center;
-    bottom: 0;
+    bottom: 70px;
     z-index: 12;
 }
 .go {
@@ -1260,7 +1263,8 @@ a {
 .float-share {
     width: 100%;
     position: fixed;
-    z-index: 50;
+    margin-bottom:10px;
+    z-index: 80px;
     left: 0;
 }
 
