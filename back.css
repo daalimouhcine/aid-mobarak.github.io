@@ -4,11 +4,6 @@
 }
 
 
-
-
-
-
-
 /*---- start styling flowers ----*/
 
 #flower1 {
@@ -48,7 +43,7 @@
 
 #flower2 #sou-flower2 {
     position: absolute;
-    animation:moving1 15s infinite linear reverse;
+    animation: moving1 15s infinite linear reverse;
 }
 
 #flower2 #sou-flower2 ul {
@@ -73,7 +68,7 @@
 /*---- end styling flowers ----*/
 
 marquee .ltrmarquee {
-    animation:jenb 5s infinite linear;
+    animation: jenb 5s infinite linear;
 }
 
 @keyframes jenb {
@@ -103,8 +98,8 @@ marquee .ltrmarquee {
     z-index:2;
 }
 #balon img,#balon1 img,#balon2 img,#balon3 img,#balon4 img,#balon5 img ,#balon6 img,#balon7 img,#balon8 img,#balon9 img,#balon10 img,#balon11 img {
-    height:70px;
-    width:40px;
+    height: 70px;
+    width: 40px;
 }
 
 #balon {
